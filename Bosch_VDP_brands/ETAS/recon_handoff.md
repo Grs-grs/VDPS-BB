@@ -68,6 +68,7 @@ This file is a handoff note for future LLM sessions, analysts, or chats that nee
 5. `Bosch_VDP_brands/ETAS/target_candidates.md` - ranked ETAS target candidates and safe business-logic hypotheses.
 6. `Bosch_VDP_brands/ETAS/passive_sitemap_inventory.md` - sitemap-derived URL groups and counts.
 7. `Bosch_VDP_brands/ETAS/notes.md` - general ETAS notes if future analysts add observations there.
+5. `Bosch_VDP_brands/ETAS/notes.md` - general ETAS notes if future analysts add observations there.
 
 ## Passive sources and methods already used
 - Official ETAS public pages and download/documentation pages.
