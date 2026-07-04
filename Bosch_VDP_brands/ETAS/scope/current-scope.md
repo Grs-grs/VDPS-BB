@@ -1,3 +1,16 @@
+| Rank | Candidate | Type | Confidence | Recon value | Active-test sensitivity | Why it is a good starting point |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | `https://www.etas.com/ww/en/downloads/software-downloads-overview/` | Official download index | High | Very High | Medium | Public sitemap shows many software-download pages and product/version slugs; good for product inventory and version mapping without testing. |
+| 2 | `https://docs.etas.com/` plus product sitemaps | Official docs hub | High | Very High | Low-Medium | Robots explicitly allows `/` and lists product-specific sitemaps; ideal for passive product/version/manual inventory. |
+| 3 | `https://www.etas.com/ww/sitemap.xml` and `https://www.etas.com/ww/en/t-sitemap.xml` | Main-site sitemap | High | High | Low | Public sitemap has 616 English URLs including downloads, support/training, cybersecurity products, and use cases. |
+| 4 | `license.etas.com` / `fnoassist.license.etas.com` | License/FNO surface | Medium-High | High | High | CT indicates license-related hosts; only passive documentation and scope clarification should be done before any interaction. |
+| 5 | `api.etas.com` / `api.edge.etas.com` / `portal.edge.etas.com` | API/edge/cloud surface | Medium-High | High | High | CT indicates API and portal hosts; passive-only until explicit scope and API testing authorization exist. |
+| 6 | `cycurguard.etas.com`, `cycurguard-dev.etas.com`, `cycurguard-test.etas.com` | Security-product-looking surface | Medium | Medium-High | High | CT names suggest product/dev/test surfaces; do not probe. Ask whether these are in scope. |
+| 7 | `findingdb.sec.etas.com` / `pmant.sec.etas.com` | Security/internal-looking surface | Medium | Medium-High | Very High | Names are interesting for scope triage only; do not browse beyond public metadata unless explicitly authorized. |
+| 8 | `model-farm.llm-gateway.research.etas.com` and Bosch variant | Research/LLM gateway-looking CT lead | Medium | Medium | Very High | Recent CT names; likely sensitive. Track passively and request explicit scope clarification only. |
+| 9 | `https://apps.apple.com/us/developer/etas-gmbh/id596772516` | App-store publisher page | High | Medium | Low | Confirmed publisher lead for mobile/app inventory; no confirmed Google Play package yet. |
+| 10 | `https://www.etas.com/ww/en/data-protection-policy/etas-support-portal-privacy-policy/` | Support portal privacy policy | High | Medium | Low | Main sitemap contains a support-portal privacy-policy URL; useful for identifying official support
+
 # ETAS passive sitemap inventory
 
 ## Collection boundary
@@ -75,16 +88,3 @@ This inventory uses public robots/sitemap resources only. No brute force, crawli
   - `https://docs.etas.com/lima/sitemap.xml` - 460 URLs.
   - `https://docs.etas.com/inca/sitemap.xml` - 1407 URLs.
   - `https://docs.etas.com/hardware/sitemap.xml` - 367 URLs.
-
-## Docs examples worth passive review
-- CycurRISK docs include a page titled `Accessing Swagger UI Rest-API Endpoint Documentation`; record as a documentation lead only, not an API probing target.
-- LiMa docs include license access, borrowing, check status, FNE/FNP license, migration, upgrade, command prompt, error code, architecture, firewall extension, and troubleshooting topics.
-- INCA docs include versioned V7.6 documentation and many add-on/new-feature pages.
-- Hardware docs include setup, commissioning, accessories, certification/conformity, open-source software, standards/norms, and maintenance topics.
-
-## Recommended passive refinements
-1. Export sitemap URLs to a local CSV/Markdown table with columns: URL, product, version, category, source sitemap, observed date, and notes.
-2. Build a product/version map from download URLs and docs versions.
-3. Compare docs versions to download versions to identify possible outdated public artifacts or lifecycle questions.
-4. Use public pages only to identify forms, login portals, entitlement language, support channels, and contact paths.
-5. Keep API/Swagger, license, and portal references as passive notes until scope explicitly permits interaction.

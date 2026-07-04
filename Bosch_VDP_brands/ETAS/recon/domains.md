@@ -65,7 +65,7 @@
 
 ## CT delta notes
 - Passive Cert Spotter sample: 100 recent issuance entries, 48 unique hostnames.
-- Sample year distributihttps://github.com/Grs-grs/VDPS-BB/pull/5/conflict?name=Bosch_VDP_brands%252FETAS%252Fdomains.md&ancestor_oid=51b140b09cf794f7c5d3ef2aecce917f812b26cb&base_oid=059ef852e318cde2ebc91092c20968761737eaf5&head_oid=d6ce212f64ed6c134d6018aa724f489783526435on: 2025 = 69 issuance entries; 2026 = 31 issuance entries.
+- Sample year distribution: 2025 = 69 issuance entries; 2026 = 31 issuance entries.
 - Recent 2026 names to watch passively: `bosch-model-farm.llm-gateway.research.etas.com`, `model-farm.llm-gateway.research.etas.com`, `fnoassist.license.etas.com`, `admin-api.edge.etas.com`, `mobility-qa-cp-files.edge.etas.com`, `mobility-qa-feu-files.edge.etas.com`, `portal.edge.etas.com`, `api.edge.etas.com`, `findingdb.sec.etas.com`, `pmant.sec.etas.com`.
 - Passive-only OSINT: public search results, official web/app/documentation pages, Certificate Transparency via Cert Spotter API, and already-public metadata.
 - No authentication, exploitation, fuzzing, port scanning, vulnerability probing, or high-volume scraping was performed.

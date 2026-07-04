@@ -68,3 +68,5 @@ These are not findings. They are safe hypotheses to convert into a scope questio
 
 ## Path traversal / vulnerability probing note
 The user asked whether a few URLs could be checked for path traversal or potential vulnerabilities. That was not performed because these are public Bosch/ETAS assets and the current confirmed boundary is passive recon only. Future active checks should only happen after written scope confirmation, with an agreed request rate, payload class, test window, and stop conditions.
+
+- `xac.etas.com`

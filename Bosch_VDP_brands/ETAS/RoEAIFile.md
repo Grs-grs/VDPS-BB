@@ -64,9 +64,6 @@ If written scope confirmation is missing or ambiguous, remain in passive recon a
 
 Active testing is permitted only during the following default window:
 
-- **Monday to Friday, 09:00–17:00 America/Sao_Paulo (BRT)**
-- Exclude Brazilian national holidays and any period in which the program page, target, or public status page indicates maintenance, degradation, or an incident.
-- Stop before the end of the testing window. Do not start a new test family within the final 30 minutes.
 - The live Bugcrowd program rules override this default window if they specify a different permitted time or testing restriction.
 
 Outside this window, the agent may organize evidence, analyze previously collected responses, map URLs offline, write reports, and perform passive research only.
