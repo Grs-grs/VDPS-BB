@@ -54,11 +54,20 @@ This file is a handoff note for future LLM sessions, analysts, or chats that nee
   - Apple developer ID.
   - Note that no ETAS-owned Google Play package ID was confirmed in the passive pass.
 
+
+### 2026-07-04 - Refined ETAS target candidates and sitemap inventory
+- Added `target_candidates.md` to rank high-confidence ETAS starting points by confidence, recon value, and active-test sensitivity.
+- Added `passive_sitemap_inventory.md` to preserve sitemap-derived download, license, cybersecurity, support/training, and docs inventory counts.
+- Explicitly documented that path traversal and active vulnerability probing were not performed and require written scope confirmation.
+
 ## Files to read first in the next session
 1. `Bosch_VDP_brands/ETAS/findings_draft.md` - primary narrative findings and next steps.
 2. `Bosch_VDP_brands/ETAS/domains.md` - passive CT/public hostname inventory and CT delta notes.
 3. `Bosch_VDP_brands/ETAS/docs.md` - public docs/download pivots and robots/sitemap observations.
 4. `Bosch_VDP_brands/ETAS/apps.md` - app-store/package-ID status.
+5. `Bosch_VDP_brands/ETAS/target_candidates.md` - ranked ETAS target candidates and safe business-logic hypotheses.
+6. `Bosch_VDP_brands/ETAS/passive_sitemap_inventory.md` - sitemap-derived URL groups and counts.
+7. `Bosch_VDP_brands/ETAS/notes.md` - general ETAS notes if future analysts add observations there.
 5. `Bosch_VDP_brands/ETAS/notes.md` - general ETAS notes if future analysts add observations there.
 
 ## Passive sources and methods already used

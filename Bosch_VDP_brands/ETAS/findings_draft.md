@@ -122,6 +122,11 @@ The following hostnames were collected from public Certificate Transparency and 
 - No confirmed Google Play package ID was identified in this passive pass; many `ETA` search hits are unrelated travel or appliance apps and should be excluded unless publisher ownership is confirmed.
 - Next passive step: search regional Apple stores and vendor pages for ETAS-owned mobile apps; record only apps whose publisher is `ETAS GmbH` or another officially confirmed Bosch/ETAS entity.
 
+## Refined follow-up artifacts
+- `target_candidates.md` ranks high-confidence ETAS starting points and separates passive-first public web targets from assets that require explicit scope confirmation.
+- `passive_sitemap_inventory.md` preserves sitemap-derived counts and representative URLs for downloads, license pages, cybersecurity pages, support/training pages, and docs sitemaps.
+- Path traversal and active vulnerability probing were not performed; future validation requires written scope confirmation and agreed rate limits/stop conditions.
+
 ## Recon value / next passive steps
 - Highest-value buckets remain downloads, license portals, security/cybersecurity product surfaces, edge/cloud portals, and public docs.
 - For downloads/docs, build a product/version inventory from the Software Download Overview and docs hub, then map each product to public installers, manuals, known-issue reports, certificates, and terms pages.
